@@ -15,13 +15,11 @@ User.findById(id)
     if (!user) {
       return console.log('Id not found');
     }
-    console.log('User by Id: ', user);
+    console.log(JSON.stringify(user, undefined, 2));
   })
   .catch(e => {
     console.log(e);
   });
-
-
 
 // Todo.find({
 //   _id: id
